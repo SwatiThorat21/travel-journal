@@ -5,7 +5,7 @@ export default function Card(props) {
   return (
     <div className="cards">
       <img
-        src= {props.imageUrl}
+        src= {props.item.imageUrl}
         alt="location_image"
         className="card-img"
       />
@@ -13,13 +13,13 @@ export default function Card(props) {
 
       <div className="google">
         <img src="../../location-img.png" alt="logo_img" className="location-img"/>
-          {props.location}
-        <a href= {props.googleMapsUrl} className="g-maps">View on google maps</a>
+          {props.item.location}
+        <a href= {props.item.googleMapsUrl} className="g-maps">View on google maps</a>
       </div>
-      <h2>{props.title}</h2>
-      <h3>{props.startDate} - {props.endDate}</h3>
+      <h2>{props.item.title}</h2>
+      <h3>{props.item.startDate} - {props.item.endDate}</h3>
       <p>
-        {props.description}
+        {props.item.description}
       </p>
       </div>
     </div>

@@ -10,13 +10,7 @@ function App() {
 return(
   <Card 
   key = {item.id}
-  imageUrl = {item.imageUrl}
-  location = {item.location}
-  googleMapsUrl = {item.googleMapsUrl}
-  title = {item.title}
-  startDate = {item.startDate}
-  endDate = {item.endDate}
-  description = {item.description}
+  item = {item}
 />
 )
 
