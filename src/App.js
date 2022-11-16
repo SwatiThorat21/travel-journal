@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import Card from './components/Cards'
 
 function App() {
-  console.log(data)
+ 
   let cards = data.map(item =>{
 return(
   <Card 
